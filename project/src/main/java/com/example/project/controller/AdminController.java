@@ -62,6 +62,8 @@ public class AdminController {
     @CrossOrigin(origins = "http://localhost:3000")
     public ResponseEntity<Void> deleteAlumni(@PathVariable Long id) {
     	adminService.deleteAlumni(id);
+        System.out.println("commitgit ");
+
         return ResponseEntity.noContent().build();
     }
 }
