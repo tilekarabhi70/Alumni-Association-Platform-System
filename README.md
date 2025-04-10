@@ -1,70 +1,91 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 🎓 Alumni Association Platform
 
-## Available Scripts
+A full-stack web application designed to manage alumni records and user roles. Built with Spring Boot and React.js.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 📝 Alumni registration and login
+- 🔐 Role-based access (`STUDENT`, `ALUMNI`, `ADMIN`)
+- 📚 Admin dashboard to manage alumni
+- 🔍 Search and filter alumni by name, email, or batch
+- ✏️ Edit or delete alumni profiles (Admin only)
+- 🌐 Frontend: React.js + Bootstrap
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠️ Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+| Layer        | Technology                |
+|--------------|---------------------------|
+| Backend      | Java 17, Spring Boot      |
+| Frontend     | React.js, Axios, Bootstrap |
+| Database     | MySQL                     |
+| API Testing  | Postman                   |
+| Build Tool   | Maven                     |
+| Version Control | Git + GitHub            |
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ⚙️ Project Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+/alumni-association-platform
+│
+├── backend/
+│   ├── controller/
+│   ├── model/
+│   ├── repository/
+│   ├── service/
+│
+├── frontend/
+│   ├── React components
+│   └── Alumni dashboard UI
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🔧 How to Run the Project
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 🖥️ Backend (Spring Boot)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+cd backend
+mvn spring-boot:run
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Set DB connection in `application.properties`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 🌐 Frontend (React.js)
 
-## Learn More
+```bash
+cd frontend
+npm install
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🧪 Sample APIs
 
-### Code Splitting
+| Endpoint                | Method | Description |
+|-------------------------|--------|-------------|
+| `/api/alumni`           |    GET | Get all alumni |
+| `/api/alumni/{id}`       | GET | Get alumni by ID |
+| `/api/alumni/search?name=` | GET | Search alumni |
+| `/api/alumni/{id}/update` | PUT | Update alumni profile |
+| `/api/alumni/{id}/delete` | DELETE | Delete alumni profile |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 👨‍💻 Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+**Abhijeet Tilekar**  
+🎓 PG-DAC | Java | Spring Boot | React  
+📧 abhijeettilekar9416@gmail.com
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
