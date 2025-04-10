@@ -1,0 +1,73 @@
+/* Notifications.css */
+body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo img {
+    transition: transform 0.3s ease;
+  }
+  
+  .logo img:hover {
+    transform: scale(1.1);
+  }
+  
+  .search-bar input {
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .search-bar input:focus {
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+  }
+  
+  .navbar-nav .nav-link {
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #ffc107 !important;
+  }
+  
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .list-group-item {
+    transition: background-color 0.3s ease;
+  }
+  
+  .list-group-item:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .list-group-item.unread {
+    background-color: #e9f5ff;
+  }
+  
+  .list-group-item.unread:hover {
+    background-color: #d1e9ff;
+  }
+  
+  .fa-check {
+    cursor: pointer;
+  }
+  
+  .fa-trash {
+    cursor: pointer;
+  }
+  
+  .fa-trash:hover {
+    color: #dc3545 !important;
+  }
+  
+  .footer {
+    border-top: 1px solid #ddd;
+  }
